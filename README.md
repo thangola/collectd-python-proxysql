@@ -28,10 +28,11 @@ You should then configure the ProxySQL plugin:
   Import proxysql
   <Module proxysql>
     Host localhost
-    Port 6032 (optional)
+    Port 6032               #(optional)
     User admin
     Password xxxx
-    Verbose true (optional, to enable debugging)
+    Hostgroup_metrics true  # (optinal, to collect stats about hostgroup backends)
+    Verbose true            # (optional, to enable debugging)
   </Module>
 </Plugin>
 ```
